@@ -1,0 +1,19 @@
+.helloWrapper {
+  padding: 15px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
