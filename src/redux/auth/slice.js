@@ -22,23 +22,12 @@ const authSlice = createSlice({
                 state.isLoggedIn = true;
             })
             .addCase(logInUser.fulfilled, (state, action) => {
+                console.log(action)
                 state.user = action.payload.user;
                 state.token = action.payload.token;
                 state.isLoggedIn = true;
             })
-            .addCase(logOutUser.fulfilled, (state) => {
-                state = {
-                    
-                    user: {
-                        name: null,
-                        email: null,
-                    },
-                    token: null,
-                    isLoggedIn: false,
-                    isRefreshing: false,   
                 }
-        })
-    }
 })
 
 export default authSlice.reducer;
