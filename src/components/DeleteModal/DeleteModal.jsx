@@ -1,7 +1,7 @@
 import css from "./DeleteModal.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { closeModal } from "../../redux/contacts/slice";
-import { deleteContact } from "../../redux/contacts/operation";
+import { deleteContact } from "../../redux/contacts/operations";
 import {
   selectIdForDelete,
   selectNameForDelete,
