@@ -18,9 +18,16 @@ const SearchBox = () => {
   };
 
   return (
-    <div className={css.findContact}>
-      <label htmlFor="findContact">Find contacts by name</label>
-      <input onChange={handleChange} type="text" id="findContact" />
+    <div className={css.formGroup}>
+      <label className={css.label} htmlFor="findContact">
+        Find contacts by name
+      </label>
+      <input
+        className={css.field}
+        onChange={handleChange}
+        type="text"
+        id="findContact"
+      />
     </div>
   );
 };

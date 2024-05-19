@@ -1,10 +1,23 @@
-.findContact {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 50px;
+.formGroup {
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 400px;
 }
 
-.findContact > label {
-  text-align: left;
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }

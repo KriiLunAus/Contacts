@@ -1,26 +1,42 @@
 .contact {
-  width: 300px;
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
   border: 1px solid #ccc;
-  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
   margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
 .contact div {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .contact p {
-  margin: 5px 0;
-  padding-left: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.contact p svg {
+  margin-right: 5px;
 }
 
 .contact button {
-  background-color: rgb(26, 26, 26);
-  color: white;
-  border: none;
   padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: white;
   cursor: pointer;
+  font-size: 0.875em;
+}
+
+.contact button:hover {
+  background-color: #c82333;
 }

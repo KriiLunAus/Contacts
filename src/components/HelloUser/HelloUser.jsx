@@ -13,7 +13,9 @@ export default function () {
 
   return (
     <div className={css.helloWrapper}>
-      <p>Hello {userName}</p>
+      <p>
+        Hello <span className={css.username}>{userName}</span>
+      </p>
       <button onClick={handleClick} className={css.btn}>
         LogOut
       </button>

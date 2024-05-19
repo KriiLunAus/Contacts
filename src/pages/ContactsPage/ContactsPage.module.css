@@ -44,3 +44,9 @@
 .read-the-docs {
   color: #888;
 }
+
+h1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
