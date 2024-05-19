@@ -21,7 +21,7 @@ export default function () {
   const { isLoading, error } = useSelector(selectContacts);
   return (
     <div className="app">
-      <h1>List of your contacts</h1>
+      <h1 className={css.header}>List of your contacts</h1>
       <ContactForm />
       <SearchBox />
       {modalIsOpen && <DeleteModal />}
