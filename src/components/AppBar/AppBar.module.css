@@ -1,7 +1,16 @@
+.navigWrapper {
+  background-color: #007bff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .linksWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: gray;
 }
 
 .navBtns {
