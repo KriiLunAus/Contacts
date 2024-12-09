@@ -24,47 +24,47 @@ const App = () => {
 
   return (
     <>
-      {isRefreshing ? (
+      {/* {isRefreshing ? (
         <p>Loading</p>
-      ) : (
-        <>
-          <Layout>
-            <Suspense fallback={null}>
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route
-                  path="/contacts"
-                  element={
-                    <PrivateRoute
-                      component={<ContactsPage />}
-                      rediretTo="/login"
-                    />
-                  }
-                />
-                <Route
-                  path="/register"
-                  element={
-                    <RestrictedRoute
-                      component={<RegisterPage />}
-                      redirectTo="/"
-                    />
-                  }
-                />
-                <Route
-                  path="/login"
-                  element={
-                    <RestrictedRoute
-                      component={<LoginPage />}
-                      redirectTo="/contacts"
-                    />
-                  }
-                />
-                <Route path="*" element={<NotFoundPage />} />
-              </Routes>
-            </Suspense>
-          </Layout>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Layout>
+          <Suspense fallback={null}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route
+                path="/contacts"
+                element={
+                  <PrivateRoute
+                    component={<ContactsPage />}
+                    rediretTo="/login"
+                  />
+                }
+              />
+              <Route
+                path="/register"
+                element={
+                  <RestrictedRoute
+                    component={<RegisterPage />}
+                    redirectTo="/"
+                  />
+                }
+              />
+              <Route
+                path="/login"
+                element={
+                  <RestrictedRoute
+                    component={<LoginPage />}
+                    redirectTo="/contacts"
+                  />
+                }
+              />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
+        </Layout>
+      </>
+      {/* )} */}
     </>
   );
 };
